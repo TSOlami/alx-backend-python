@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" Returns floor and its type"""
+""" Takes a float n as argument and returns the floor of the float"""
 
 import math
 

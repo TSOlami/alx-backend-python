@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-""" converts a float to a string"""
+""" Takes a float n as argument
+and returns the string representation of the float."""
 
 
 def to_str(n: float) -> str:
