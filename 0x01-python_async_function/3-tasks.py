@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-# A function (do not create an async function, use the regular function syntax to do this)
-import asyncio
+# A function (do not create an async function)
 
+import asyncio
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
