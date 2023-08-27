@@ -88,4 +88,7 @@ class TestMemoize(unittest.TestCase):
             first_call = mock_obj.a_property
             second_call = mock_obj.a_property
 
+            self.assertEqual(first_call, 42)
+            self.assertEqual(second_call, 42)
+
             mock_method.assert_called_once()
