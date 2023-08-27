@@ -58,14 +58,14 @@ class TestGetJson(unittest.TestCase):
             response = get_json(url)
             self.assertEqual(response, expected_result)
 
+
 class TestMemoize(unittest.TestCase):
     """A test memoized class
     """
 
     def test_memoize(self):
-        """A test memoize method 
+        """A test memoize method
         """
-
 
         class TestClass:
             """A test class for testing the memoized function
