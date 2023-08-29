@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+"""A unit testing for testing the client module.
+"""
 import unittest
 from unittest.mock import patch
 from parameterized import (parameterized, parameterized_class)
@@ -41,7 +43,7 @@ class TestGithubOrgClient(unittest.TestCase):
         mocked_function.assert_called_once_with(
             "https://api.github.com/orgs/{}".format(org)
         )
-    
+
     def test_public_repos_url(self) -> None:
         """This method tests if the GithubOrgClient retrieves the correct URL
         for the public repositories of the organization.
@@ -117,8 +119,10 @@ class TestGithubOrgClient(unittest.TestCase):
                     "kratu",
                 ],
             )
+
             mock_public_repos_url.assert_called_once()
         mock_get_json.assert_called_once()
+
     @parameterized.expand([
         ({'license': {'key': "bsd-3-clause"}}, "bsd-3-clause", True),
         ({'license': {'key': "bsl-1.0"}}, "bsd-3-clause", False),
